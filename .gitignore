@@ -1,0 +1,10 @@
+# Ignoring API KEY files *
+ibm-credentials.env
+key.json
+
+# OS FILES #
+.DS_STORE
+
+# BUILD FILES #
+*.class
+build.gradle
