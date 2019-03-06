@@ -19,4 +19,5 @@ dependencies {
 
     // jsoup HTML parser library @ https://jsoup.org/
     compile 'org.jsoup:jsoup:1.11.3'
+    compile group: 'com.opencsv', name: 'opencsv', version: '4.1'
 }
