@@ -1,0 +1,22 @@
+plugins {
+    id 'java'
+}
+
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    //run.doFirst { environment 'GOOGLE_APPLICATION_CREDENTIALS', '~/Downloads/StackOverflowAnalysis-1b6d84fedf26.json'}
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    //compile 'com.google.cloud:google-cloud-bigquery:1.59.0'
+
+    compile 'com.ibm.watson.developer_cloud:personality-insights:6.13.2'
+
+    // jsoup HTML parser library @ https://jsoup.org/
+    compile 'org.jsoup:jsoup:1.11.3'
+}
