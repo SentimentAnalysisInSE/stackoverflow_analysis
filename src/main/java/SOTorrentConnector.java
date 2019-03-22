@@ -31,6 +31,7 @@ public class SOTorrentConnector {
             conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/sotorrent18_12",
                     "java",
                     "password");
+            System.out.println("created database connector");
         } catch (SQLException e) {
             handleSQLException(e);
         }
@@ -39,21 +40,64 @@ public class SOTorrentConnector {
 
 
     public static void main (String[] args) {
-        //writeRandomInsightsToFile(5);
         SOTorrentConnector sotorrent = new SOTorrentConnector();
-        int userId = (int) (Math.random() * USERID_MAX);
-        System.out.println(sotorrent.getAppendedPostBodies(userId));
+        ArrayList<Integer> uids = sotorrent.getTopPostUsers(10);
+        for(Integer i : uids) {
+            String appendedPostBodies = sotorrent.getAppendedPostBodies(i, 10);
+            PersonalityInsightsHandler.sendToPersonalityInsights(appendedPostBodies,i);
+            System.out.println(appendedPostBodies);
+        }
+        System.out.println("Program Complete.");
     }
 
-    public String getAppendedPostBodies (int userId) {
-        int limit = 5;
-        String query = "SELECT Body FROM Posts WHERE OwnerUserId='" + Integer.toString(userId) + "' LIMIT " + Integer.toString(limit);
+    public ArrayList<Integer> getTopPostUsers(int limit) {
+        ArrayList<Integer> result = new ArrayList<Integer>(limit);
+        String query = "SELECT OwnerUserId from Posts ORDER BY Score DESC LIMIT "
+                + Integer.toString(limit) + ";";
+
+        Statement stmt = null;
+        ResultSet rs = null;
+        System.out.println("Setup...");
+        try {
+            System.out.print("Executing Query... ");
+            long startTime = System.currentTimeMillis();
+            stmt = conn.createStatement();
+            rs = stmt.executeQuery(query);
+            long endTime = System.currentTimeMillis();
+            Long interval = (endTime - startTime) / 1000;
+            System.out.println("done after " + interval.toString() + " seconds");
+            while(rs.next()) {
+                System.out.println();
+                String rawText = rs.getString(1);
+                int idInt = Integer.parseInt(rawText);
+                System.out.println(rawText);
+                result.add(idInt);
+
+            }
+        } catch (SQLException e) {
+            handleSQLException(e);
+        }
+        return result;
+    }
+
+
+    public String getAppendedPostBodies (int userId, int limit) {
+        String query = "SELECT Body FROM Posts WHERE OwnerUserId='"
+                + Integer.toString(userId)
+                + "' ORDER BY Score DESC"
+                + " LIMIT "
+                + Integer.toString(limit);
         Statement stmt = null;
         ResultSet rs = null;
         System.out.println("UserID: " + userId);
         try {
+            System.out.print("Executing Query \"" + query + "\" ... ");
+            long startTime = System.currentTimeMillis();
             stmt = conn.createStatement();
             rs = stmt.executeQuery(query);
+            long endTime = System.currentTimeMillis();
+            Long interval = (endTime - startTime) / 1000;
+            System.out.println("done after " + interval.toString() + " seconds");
             String result = "";
             while(rs.next()) {
                 String rawText = rs.getString(1);
