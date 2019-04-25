@@ -5,6 +5,8 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.sql.ResultSet;
 import java.io.*;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.*;
 import com.opencsv.CSVWriter;
 
@@ -15,6 +17,7 @@ public class SOTorrentConnector {
     Connection conn;
     static final int POSTID_MAX = 53577511;
     static final int USERID_MAX = 10733737;
+    static final int MIN_WORDS = 600;
 
     public SOTorrentConnector() {
 
@@ -40,6 +43,11 @@ public class SOTorrentConnector {
 
 
     public static void main (String[] args) {
+        //analyzeTopPostersByScore();
+        writeAllReputationsToCSV();
+    }
+
+    public static void analyzeTopPostersByScore() {
         SOTorrentConnector sotorrent = new SOTorrentConnector();
         ArrayList<Integer> uids = sotorrent.getTopPostUsers(10);
         for(Integer i : uids) {
@@ -50,23 +58,59 @@ public class SOTorrentConnector {
         System.out.println("Program Complete.");
     }
 
+    public static void writeAllReputationsToCSV() {
+        SOTorrentConnector sotorrent = new SOTorrentConnector();
+        String filename = "reputations.csv";
+        int increment = 10000;
+        for(int i = 0; i < 10800000; i += increment) {
+            LinkedList reputations = sotorrent.getUserReputationByIDWithinRange(i, i + increment);
+            JsonToCSV.writeListToFile(reputations, filename);
+        }
+
+    }
+
+    public LinkedList<Integer> getUserReputationByIDWithinRange(int min, int max) {
+        LinkedList<Integer> result = new LinkedList<Integer>();
+        String query = "SELECT Reputation from Users WHERE 'Id' > " +
+                min +
+                " AND Id <= " +
+                max +
+                ";";
+        Statement stmt = null;
+        ResultSet rs = null;
+        System.out.println("Setup...");
+        Date date = Calendar.getInstance().getTime();
+        DateFormat dateFormat = new SimpleDateFormat("yyyy-mm-dd hh:mm:ss");
+        String strDate = dateFormat.format(date);
+        try {
+            System.out.println("Executing Query \n" + query + "\nat " + strDate);
+            stmt = conn.createStatement();
+            rs = stmt.executeQuery(query);
+            while(rs.next()) {
+                result.add(rs.getInt(1));
+            }
+            System.out.println("Done querying.");
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return result;
+    }
+
     public ArrayList<Integer> getTopPostUsers(int limit) {
         ArrayList<Integer> result = new ArrayList<Integer>(limit);
-        String query = "SELECT OwnerUserId from Posts ORDER BY Score DESC LIMIT "
-                + Integer.toString(limit) + ";";
-
+        String query = "SELECT OwnerUserId from Posts ORDER BY Score DESC;";
         Statement stmt = null;
         ResultSet rs = null;
         System.out.println("Setup...");
         try {
-            System.out.print("Executing Query... ");
+            System.out.print("Executing Query \n" + query + "... ");
             long startTime = System.currentTimeMillis();
             stmt = conn.createStatement();
             rs = stmt.executeQuery(query);
             long endTime = System.currentTimeMillis();
             Long interval = (endTime - startTime) / 1000;
             System.out.println("done after " + interval.toString() + " seconds");
-            while(rs.next()) {
+            while(result.size() < limit && rs.next()) {
                 System.out.println();
                 String rawText = rs.getString(1);
                 int idInt = Integer.parseInt(rawText);
@@ -84,9 +128,7 @@ public class SOTorrentConnector {
     public String getAppendedPostBodies (int userId, int limit) {
         String query = "SELECT Body FROM Posts WHERE OwnerUserId='"
                 + Integer.toString(userId)
-                + "' ORDER BY Score DESC"
-                + " LIMIT "
-                + Integer.toString(limit);
+                + "' ORDER BY Score DESC;" ;
         Statement stmt = null;
         ResultSet rs = null;
         System.out.println("UserID: " + userId);
@@ -99,10 +141,14 @@ public class SOTorrentConnector {
             Long interval = (endTime - startTime) / 1000;
             System.out.println("done after " + interval.toString() + " seconds");
             String result = "";
-            while(rs.next()) {
+            int wordCount = 0;
+            while(wordCount < MIN_WORDS && rs.next()) {
                 String rawText = rs.getString(1);
                 String cleanText = Denoiser.denoise(rawText);
                 result += cleanText + " ";
+                //word counting
+                String tokens[] = cleanText.split("\\s+");
+                wordCount = tokens.length;
             }
             return result;
         } catch (SQLException e) {

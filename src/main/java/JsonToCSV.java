@@ -4,7 +4,10 @@ import java.io.FilenameFilter;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
+import java.util.Random;
 
 import com.google.gson.Gson;
 import com.opencsv.CSVWriter;
@@ -13,7 +16,22 @@ import com.opencsv.CSVWriter;
 
 public class JsonToCSV {
     public static void main(String[] args) {
-        convert();
+        //convert();
+
+    }
+
+    public static void writeListToFile(List list, String filename) {
+        try {
+            FileWriter writer = new FileWriter(filename, true);
+            CSVWriter csvWriter = new CSVWriter(writer);
+            for (Object i : list) {
+                csvWriter.writeNext(new String[]{i.toString()});
+            }
+            csvWriter.close();
+            writer.close();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
     public static void convert() {
@@ -62,7 +80,7 @@ public class JsonToCSV {
                     });
 
 
-                } catch (IOException e) {
+                } catch (Exception e) {
                     e.printStackTrace();
                 }
 
