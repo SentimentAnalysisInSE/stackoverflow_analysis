@@ -44,7 +44,39 @@ public class SOTorrentConnector {
 
     public static void main (String[] args) {
         //analyzeTopPostersByScore();
-        writeAllReputationsToCSV();
+        getRandomSampleToCSV(1000);
+
+    }
+
+    public static void getRandomSampleToCSV(int amount) {
+        LinkedList list = new SOTorrentConnector().getUserReputationByIDWithinRange(0, USERID_MAX);
+        LinkedList result = new LinkedList();
+        for(int i = 0; i < amount; i++) {
+            int index =(int) (Math.random() * list.size());
+            result.add(list.get(index));
+        }
+        JsonToCSV.writeListToFile(result, "randomsample.csv");
+    }
+
+    public static void getQuartilesOfReputation() {
+        LinkedList list = new SOTorrentConnector().getUserReputationByIDWithinRange(0, USERID_MAX);
+        System.out.println("starting sort... \n" + getCurrentTimeString());
+        Collections.sort(list);
+        int numTotal = list.size();
+        System.out.println("Total users: " + list.size());
+        while (list.remove((Integer) 1));
+        int numOnes = numTotal - list.size();
+        int firstQuartile = list.size()/4;
+        int firstHalf = list.size()/2;
+        int thirdQuartile = list.size() * 3 / 4;
+        System.out.println("Number of ones: " + numOnes +
+                "\nTotal without ones: " + list.size() +
+                "\nFirst Quartile at index " + firstQuartile + ": " + list.get(firstQuartile) +
+                "\nFirst Half at index " + firstHalf + ": " + list.get(firstHalf) +
+                "\nThird Quartile at index " + thirdQuartile + ": " + list.get(thirdQuartile) +
+                "\nTop reputation: " + list.getLast()
+
+        );
     }
 
     public static void analyzeTopPostersByScore() {
@@ -71,7 +103,7 @@ public class SOTorrentConnector {
 
     public LinkedList<Integer> getUserReputationByIDWithinRange(int min, int max) {
         LinkedList<Integer> result = new LinkedList<Integer>();
-        String query = "SELECT Reputation from Users WHERE 'Id' > " +
+        String query = "SELECT Reputation from Users WHERE Id > " +
                 min +
                 " AND Id <= " +
                 max +
@@ -79,21 +111,27 @@ public class SOTorrentConnector {
         Statement stmt = null;
         ResultSet rs = null;
         System.out.println("Setup...");
-        Date date = Calendar.getInstance().getTime();
-        DateFormat dateFormat = new SimpleDateFormat("yyyy-mm-dd hh:mm:ss");
-        String strDate = dateFormat.format(date);
+        String strDate = getCurrentTimeString();
         try {
             System.out.println("Executing Query \n" + query + "\nat " + strDate);
             stmt = conn.createStatement();
             rs = stmt.executeQuery(query);
             while(rs.next()) {
-                result.add(rs.getInt(1));
+                String currentRep = rs.getString(1);
+                //System.out.println(currentRep);
+                result.add(Integer.parseInt(currentRep));
             }
             System.out.println("Done querying.");
         } catch (Exception e) {
             e.printStackTrace();
         }
         return result;
+    }
+
+    public static String getCurrentTimeString() {
+        Date date = Calendar.getInstance().getTime();
+        DateFormat dateFormat = new SimpleDateFormat("yyyy-mm-dd hh:mm:ss");
+        return dateFormat.format(date);
     }
 
     public ArrayList<Integer> getTopPostUsers(int limit) {
