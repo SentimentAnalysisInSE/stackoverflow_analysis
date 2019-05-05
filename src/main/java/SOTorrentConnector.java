@@ -44,7 +44,38 @@ public class SOTorrentConnector {
 
     public static void main (String[] args) {
         //analyzeTopPostersByScore();
-        getRandomSampleToCSV(1000);
+        SOTorrentConnector sotorrent = new SOTorrentConnector();
+        sotorrent.getTopUsersByReputation(100);
+
+    }
+
+
+    public LinkedList<Integer> getTopUsersByReputation(int amount) {
+        LinkedList<Integer> result = new LinkedList();
+        int queryLimit = (int) (amount + (amount * 0.5));
+        String query = "SEELCT Id FROM Users ORDER BY Reputation DESC LIMIT " +
+                queryLimit +
+                ";";
+        Statement stmt = null;
+        ResultSet rs = null;
+        System.out.println("Setup...");
+        try {
+            System.out.print("Executing Query \n" + query + "... " + getCurrentTimeString());
+            stmt = conn.createStatement();
+            rs = stmt.executeQuery(query);
+            System.out.println("done. " + getCurrentTimeString());
+            while(result.size() < queryLimit && rs.next()) {
+                System.out.println();
+                String rawText = rs.getString(1);
+                int idInt = Integer.parseInt(rawText);
+                System.out.println(rawText);
+                result.add(idInt);
+
+            }
+        } catch (SQLException e) {
+            handleSQLException(e);
+        }
+        return result;
 
     }
 
@@ -77,6 +108,16 @@ public class SOTorrentConnector {
                 "\nTop reputation: " + list.getLast()
 
         );
+    }
+
+    public static void analyzeTopPostsByReputation(int limit) {
+        SOTorrentConnector sotorrent = new SOTorrentConnector();
+        LinkedList<Integer> userIds = sotorrent.getTopUsersByReputation(limit);
+        for(Integer i : userIds) {
+            String appendedPostBodies = sotorrent.getAppendedPostBodies(i, 10);
+            PersonalityInsightsHandler.sendToPersonalityInsights(appendedPostBodies, i);
+            System.out.println(appendedPostBodies);
+        }
     }
 
     public static void analyzeTopPostersByScore() {
