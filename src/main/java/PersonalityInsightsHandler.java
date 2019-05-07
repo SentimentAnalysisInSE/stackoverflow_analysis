@@ -20,6 +20,9 @@ public class PersonalityInsightsHandler {
 
     public static void sendToPersonalityInsights(String text, int userId) {
         try {
+            if(text == null) {
+                return;
+            }
             FileWriter fileWriter = new FileWriter(Integer.toString(userId) + ".json");
             PersonalityInsights service = new PersonalityInsights("2016-10-19");
 

@@ -44,8 +44,8 @@ public class SOTorrentConnector {
 
     public static void main (String[] args) {
         //analyzeTopPostersByScore();
-        SOTorrentConnector sotorrent = new SOTorrentConnector();
-        sotorrent.getTopUsersByReputation(100);
+        //SOTorrentConnector sotorrent = new SOTorrentConnector();
+        analyzeTopPostsByReputation(100);
 
     }
 
@@ -53,9 +53,8 @@ public class SOTorrentConnector {
     public LinkedList<Integer> getTopUsersByReputation(int amount) {
         LinkedList<Integer> result = new LinkedList();
         int queryLimit = (int) (amount + (amount * 0.5));
-        String query = "SEELCT Id FROM Users ORDER BY Reputation DESC LIMIT " +
-                queryLimit +
-                ";";
+        String query = "SELECT Id from Users ORDER BY Reputation DESC LIMIT " +
+                queryLimit;
         Statement stmt = null;
         ResultSet rs = null;
         System.out.println("Setup...");
@@ -212,13 +211,9 @@ public class SOTorrentConnector {
         ResultSet rs = null;
         System.out.println("UserID: " + userId);
         try {
-            System.out.print("Executing Query \"" + query + "\" ... ");
-            long startTime = System.currentTimeMillis();
+            System.out.print("Executing Query \"" + query + "\" ...  " + getCurrentTimeString());
             stmt = conn.createStatement();
             rs = stmt.executeQuery(query);
-            long endTime = System.currentTimeMillis();
-            Long interval = (endTime - startTime) / 1000;
-            System.out.println("done after " + interval.toString() + " seconds");
             String result = "";
             int wordCount = 0;
             while(wordCount < MIN_WORDS && rs.next()) {
@@ -230,8 +225,8 @@ public class SOTorrentConnector {
                 wordCount = tokens.length;
             }
             return result;
-        } catch (SQLException e) {
-            handleSQLException(e);
+        } catch (Exception e) {
+            e.printStackTrace();
             return null;
         }
     }
