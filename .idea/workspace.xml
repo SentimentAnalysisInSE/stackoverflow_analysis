@@ -2,170 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8d43b1f3-1189-4c26-b48e-52262d2d0462" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/100297.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1048572.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/106224.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/10661.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/114251.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1144035.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/115145.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/118068.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1187415.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/119963.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/12711.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1271826.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/12950.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/13249.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/13302.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/138475.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/139459.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/139985.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/14860.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/148870.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1491895.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/149392.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/151292.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/15168.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/157247.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/157882.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1583.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/16417.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/16883.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/17034.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/179910.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/182668.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/18393.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/187606.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/18936.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/190597.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/19068.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/19563.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1968.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/203907.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/20860.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/20862.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/21234.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/215945.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/217408.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/218196.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/223092.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/224671.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/22656.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/227665.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/23283.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/23354.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/267.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/276052.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/279627.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/28169.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/284240.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/28804.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2901002.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/29407.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2988.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/3043.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/31671.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/330315.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/335858.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/33708.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/341994.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/34397.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/34509.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/367273.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/3732271.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/3832970.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/413501.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/440558.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/476.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/479863.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/50079.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/505088.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/53114.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/5445.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/548225.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/55159.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/560648.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/571407.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/57695.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/596781.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/61974.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/6309.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/65358.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/65863.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/69083.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/70604.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/73226.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/734069.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/771848.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/77567.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/816620.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/87234.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/88656.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/893.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/9021.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/922184.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/939860.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/9530.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/95810.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/992484.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/9951.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/First Run/14113.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/First Run/189134.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/First Run/541136.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/First Run/62130.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/First Run/87234.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/First Run/8985.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/First Run/89904.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/First Run/922184.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/First Run/95592.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/First Run/results.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/second run/100297.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/second run/1109.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/second run/119963.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/second run/12870.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/second run/13161.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/second run/131679.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/second run/14069.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/second run/14113.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/second run/168288.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/second run/18300.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/second run/1849664.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/second run/189134.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/second run/2057919.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/second run/214090.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/second run/22656.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/second run/25449.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/second run/256196.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/second run/3002139.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/second run/3093387.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/second run/3155639.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/second run/366904.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/second run/394487.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/second run/39933.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/second run/4099593.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/second run/44984.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/second run/476.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/second run/489564.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/second run/53114.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/second run/541136.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/second run/5486.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/second run/563532.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/second run/584192.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/second run/6068.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/second run/613430.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/second run/62130.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/second run/7473.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/second run/87234.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/second run/893.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/second run/8985.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/second run/89904.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/second run/922184.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/second run/92315.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/second run/95592.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/second run/9951.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/PersonalityInsightsHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PersonalityInsightsHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/JsonToCSV.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/JsonToCSV.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/SOTorrentConnector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SOTorrentConnector.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -210,22 +48,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/IBMPersonalityInsightsTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="9" column="25" selection-start-line="9" selection-start-column="23" selection-end-line="15" selection-end-column="123" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/PersonalityInsightsHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="278">
-              <caret line="23" column="23" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
+            <state relative-caret-position="75">
+              <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -248,13 +74,36 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/SOTorrentConnector.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="417">
-              <caret line="228" column="32" selection-start-line="228" selection-start-column="32" selection-end-line="228" selection-end-column="32" />
+            <state relative-caret-position="452">
+              <caret line="85" column="11" selection-start-line="85" selection-end-line="87" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#5439#5448#0" expanded="true" />
-                <element signature="e#6645#6654#0" expanded="true" />
+                <element signature="e#1530#1546#0" expanded="true" />
+                <element signature="e#5402#5411#0" expanded="true" />
+                <element signature="e#6608#6617#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/JsonToCSV.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="555">
+              <caret line="49" column="31" selection-start-line="49" selection-start-column="31" selection-end-line="49" selection-end-column="31" />
+              <folding>
+                <element signature="e#1581#1582#0" expanded="true" />
+                <element signature="e#1642#1643#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" selection-start-line="11" selection-end-line="11" />
             </state>
           </provider>
         </entry>
@@ -308,9 +157,9 @@
         <option value="$PROJECT_DIR$/src/main/java/Denoiser.java" />
         <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/src/main/java/JsonToCSV.java" />
-        <option value="$PROJECT_DIR$/src/main/java/SOTorrentConnector.java" />
         <option value="$PROJECT_DIR$/src/main/java/PersonalityInsightsHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/SOTorrentConnector.java" />
+        <option value="$PROJECT_DIR$/src/main/java/JsonToCSV.java" />
       </list>
     </option>
   </component>
@@ -332,14 +181,19 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="stackoverflow_analysis" type="b2602c69:ProjectViewProjectNode" />
               <item name="stackoverflow_analysis" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="stackoverflow_analysis" type="b2602c69:ProjectViewProjectNode" />
+              <item name="stackoverflow_analysis" type="462c0819:PsiDirectoryNode" />
+              <item name="generated-data" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="stackoverflow_analysis" type="b2602c69:ProjectViewProjectNode" />
@@ -370,7 +224,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557213164516" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559627475134" />
     <property name="extract.method.default.visibility" value="public" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
@@ -396,7 +250,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.SOTorrentConnector (1)">
+  <component name="RunManager" selected="Application.JsonToCSV">
     <configuration name="Denoiser" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Denoiser" />
       <module name="StackOverflowAnalysis.main" />
@@ -434,8 +288,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.SOTorrentConnector (1)" />
         <item itemvalue="Application.JsonToCSV" />
+        <item itemvalue="Application.SOTorrentConnector (1)" />
         <item itemvalue="Application.PersonalityInsightsHandler" />
         <item itemvalue="Application.IBMPersonalityInsightsTest" />
         <item itemvalue="Application.Denoiser" />
@@ -478,9 +332,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="134" y="81" width="2426" height="1207" extended-state="6" />
+    <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49910232" visible="true" weight="0.15840337" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49910232" visible="true" weight="0.18760376" />
       <window_info id="Structure" order="1" sideWeight="0.50089765" side_tool="true" weight="0.25235197" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -489,14 +344,14 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49957982" visible="true" weight="0.41372913" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49957982" visible="true" weight="0.2559395" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32627866" />
+      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49871466" weight="0.32352942" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32913387" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50042015" side_tool="true" weight="0.41372913" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5012854" side_tool="true" weight="0.32352942" />
       <window_info anchor="bottom" id="Build" order="10" weight="0.32692307" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.32440946" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -591,25 +446,6 @@
     <entry file="file://$PROJECT_DIR$/settings.gradle">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/JsonToCSV.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1003">
-          <caret line="73" column="47" selection-start-line="73" selection-start-column="47" selection-end-line="73" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/SOTorrentConnector.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="417">
-          <caret line="228" column="32" selection-start-line="228" selection-start-column="32" selection-end-line="228" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#5439#5448#0" expanded="true" />
-            <element signature="e#6645#6654#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ResultsAnalyzer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -622,10 +458,34 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/PersonalityInsightsHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="278">
-          <caret line="23" column="23" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
+        <state relative-caret-position="75">
+          <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/SOTorrentConnector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="452">
+          <caret line="85" column="11" selection-start-line="85" selection-end-line="87" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1530#1546#0" expanded="true" />
+            <element signature="e#5402#5411#0" expanded="true" />
+            <element signature="e#6608#6617#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/JsonToCSV.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret line="49" column="31" selection-start-line="49" selection-start-column="31" selection-end-line="49" selection-end-column="31" />
+          <folding>
+            <element signature="e#1581#1582#0" expanded="true" />
+            <element signature="e#1642#1643#0" expanded="true" />
           </folding>
         </state>
       </provider>

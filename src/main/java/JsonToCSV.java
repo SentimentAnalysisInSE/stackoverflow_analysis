@@ -4,10 +4,7 @@ import java.io.FilenameFilter;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Random;
+import java.util.*;
 
 import com.google.gson.Gson;
 import com.opencsv.CSVWriter;
@@ -17,7 +14,7 @@ import com.opencsv.CSVWriter;
 public class JsonToCSV {
     public static void main(String[] args) {
         //convert();
-
+        writeHashTableToCSV(SOTorrentConnector.getTopUsersTags(100));
     }
 
     public static void writeListToFile(List list, String filename) {
@@ -32,6 +29,29 @@ public class JsonToCSV {
         } catch (Exception e) {
             e.printStackTrace();
         }
+    }
+
+    public static void writeHashTableToCSV(HashMap<String, Integer> map) {
+        File file = new File("tags.csv");
+        try {
+            FileWriter outputFile = new FileWriter(file);
+            CSVWriter writer = new CSVWriter(outputFile);
+            String[] header = {"Tag name", "Count"};
+            writer.writeNext(header);
+
+            for (Map.Entry entry : map.entrySet()) {
+                System.out.println(entry.getKey() + ": " + entry.getValue());
+                writer.writeNext(new String[] {
+                        entry.getKey().toString(),
+                        entry.getValue().toString()
+                });
+            }
+            writer.close();
+            outputFile.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
     }
 
     public static void convert() {

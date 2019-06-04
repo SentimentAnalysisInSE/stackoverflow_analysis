@@ -45,8 +45,48 @@ public class SOTorrentConnector {
     public static void main (String[] args) {
         //analyzeTopPostersByScore();
         //SOTorrentConnector sotorrent = new SOTorrentConnector();
-        analyzeTopPostsByReputation(100);
+        //analyzeTopPostsByReputation(100);
+        //getQuartilesOfReputation();
+        getTopUsersTags(100);
+    }
 
+    public static HashMap<String, Integer> getTopUsersTags(int queryLimit) {
+        HashMap<String, Integer> result = new HashMap<String,Integer>();
+        SOTorrentConnector soTorrent = new SOTorrentConnector();
+        String query = "SELECT Tags from Posts ORDER BY Score DESC LIMIT " +
+                queryLimit;
+        Statement stmt = null;
+        ResultSet rs = null;
+        System.out.println("Setup...");
+        try {
+            System.out.print("Executing Query \n" + query + "... " + getCurrentTimeString());
+            stmt = soTorrent.conn.createStatement();
+            rs = stmt.executeQuery(query);
+            System.out.println("done. " + getCurrentTimeString());
+            while(result.size() < queryLimit && rs.next()) {
+                System.out.println();
+                String rawText = rs.getString(1);
+                System.out.println(rawText);
+                if(rawText != null) {
+                    String[] individualTags = rawText.split("[<>]");
+                    for (String tag : individualTags) {
+                        if (result.containsKey(tag)) {
+                            Integer previousVal = result.get(tag);
+                            result.replace(tag, previousVal + 1);
+                        } else {
+                            result.put(tag, 1);
+                        }
+                    }
+                }
+
+            }
+        } catch (SQLException e) {
+            handleSQLException(e);
+        }
+        for (Map.Entry<String, Integer> entry : result.entrySet()) {
+            System.out.println(entry.getKey() + ": " + entry.getValue());
+        }
+        return result;
     }
 
 
