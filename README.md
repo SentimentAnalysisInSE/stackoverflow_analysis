@@ -12,7 +12,7 @@ The final report for the project is available [here](https://github.com/Sentimen
 In addition to the Big Five personality facets provided, IBM Personality Insights also returns percentile scores for some sub-facets of each of the Big Five as well as a set of scores for needs and values. The additional information is available in the raw JSON format returned by Personality Insights or can be viewed [here\(Google Docs\)](https://docs.google.com/spreadsheets/d/10UJuorLYhImkMU2a1kVQ7BTFAlEhHZviHdPdcPee-zE/edit?usp=sharing).
 
 ## Cal Poly Industry Advisory Board Poster
-A poster with the project overview and results was also created.
+A poster with the project overview and results was also created. A digital version of the poster can be viewed [here \(PDF\)](https://github.com/SentimentAnalysisInSE/stackoverflow_analysis/blob/master/IABPoster.pdf). Additional visual aides used are available [here \(Google Slides\)](https://docs.google.com/presentation/d/e/2PACX-1vRf5c0TPlDm3TFKV2SxkXHReRq9AZL5GWhHy6AO7ez5Q7webBuMpqL9TopBmL_GyljtHwj1wzhFpRbc/pub?start=false&loop=false&delayms=10000)
 
 #### Credits
 This project utilizes the SOTorrent dataset, which allows for SQL access on the Stack Overflow late 2018 Datadump. [More info about SOTorrent](https://empirical-software.engineering/projects/sotorrent/#)
