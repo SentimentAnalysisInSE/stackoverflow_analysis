@@ -8,6 +8,16 @@ The human aspect of programming has become a popular area of study in the Softwa
 ## Paper
 The final report for the project is available [here](https://github.com/SentimentAnalysisInSE/stackoverflow_analysis/blob/master/PersonalityAnalysisStackOverflow.pdf).
 
+## Directories in Repo
+Here's a brief description of some of the subdirectories in the Repo:
+
+| **Directory Name** | **Description** |
+| ---- | ---- |
+| First Run | Initial trial run of 9 of the highest scoring post authors|
+| Second Run | Second preliminary run with 40 of the highest scoring post authors|
+| HighScoreResults_json | Around 100 of the top scoring posts' authors analyses. This data was used in the final report|
+| ReputationResults_json | Around 100 of the highest Reputation users' analyses. This data was used in the final report|
+
 ## Additional Data
 In addition to the Big Five personality facets provided, IBM Personality Insights also returns percentile scores for some sub-facets of each of the Big Five as well as a set of scores for needs and values. The additional information is available in the raw JSON format returned by Personality Insights or can be viewed [here\(Google Docs\)](https://docs.google.com/spreadsheets/d/10UJuorLYhImkMU2a1kVQ7BTFAlEhHZviHdPdcPee-zE/edit?usp=sharing).
 
